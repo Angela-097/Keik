@@ -58,3 +58,41 @@ body {
 .nav-btn:hover {
     background-color: var(--color-terracota-hover);
 }
+.hero-banner {
+    background-color: var(--color-terracota);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+    margin-top: 1rem;
+    position: relative;
+    min-height: 280px;
+}
+
+.hero-img-left img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-card {
+    background-color: var(--color-blanco);
+    border-radius: 35px;
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+}
+.hero-card p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: var(--color-texto);
+}
+.hero-img-right img {
+    width: 280px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 60% 40% 70% 30% / 40% 50% 50% 60%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
