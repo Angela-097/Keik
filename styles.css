@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     background-color: var(--color-bg);
     width: 100%;
@@ -21,7 +25,15 @@ html, body {
     font-family: 'Fredoka', sans-serif;
     color: var(--color-texto);
 }
-/* ENCABEZADO*/
+
+main {
+    padding-top: 230px;
+}
+
+section {
+    scroll-margin-top: 220px;
+}
+
 .navbar, .hero-banner {
     display: flex;
     align-items: center;
@@ -30,7 +42,15 @@ html, body {
     padding: 2rem 4rem;
 }
 
-.navbar { align-items: flex-start; }
+.navbar { 
+    align-items: flex-start; 
+}
+
+.navbar.fixed-top {
+    background-color: var(--color-bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
 
 .logo-img {
     height: 220px;
@@ -63,15 +83,21 @@ html, body {
 
 .nav-btn:hover, .btn-agregar:hover {
     background-color: var(--color-terracota-hover);
+    color: var(--color-blanco);
 }
+
 .hero-banner {
     background-color: var(--color-terracota);
     border-radius: 30px;
     margin: 0 4rem 3rem;
     min-height: 250px;
+    max-width: calc(100% - 8rem);
 }
 
-.hero-img-left img { width: 278px; object-fit: contain; }
+.hero-img-left img { 
+    width: 278px; 
+    object-fit: contain; 
+}
 
 .hero-card {
     background-color: var(--color-blanco);
@@ -90,7 +116,6 @@ html, body {
     border-radius: 60% 40% 70% 30% / 40% 50% 50% 60%;
 }
 
-/* SECCIÓN PASTELES */
 .pasteles-section {
     padding: 1rem 4rem 4rem;
 }
@@ -112,12 +137,6 @@ html, body {
 .section-icon {
     height: 134px;
     width: auto;
-}
-
-.pasteles-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem 2.5rem;
 }
 
 .card-img-box {
@@ -152,7 +171,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0,  0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-footer {
@@ -160,6 +179,9 @@ html, body {
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
+    background: transparent;
+    border: none;
+    padding: 0;
 }
 
 .producto-nombre {
@@ -168,7 +190,7 @@ html, body {
     letter-spacing: 0.5px;
     line-height: 1.3;
 }
-/* SECCIÓN NOSOTROS */
+
 .nosotros-section {
     padding: 2rem 4rem 4rem 4rem;
 }
@@ -182,6 +204,7 @@ html, body {
     gap: 3rem;
     padding: 3rem 4rem;
     color: var(--color-blanco);
+    max-width: 100% !important;
 }
 
 .nosotros-img-box {
@@ -220,15 +243,9 @@ html, body {
     margin-bottom: 1rem;
     font-weight: 500;
 }
+
 .promos-section {
     padding: 2rem 4rem 4rem;
-}
-
-.promos-container {
-    display: grid;
-    grid-template-columns: 1fr 1.3fr 1fr; 
-    gap: 2rem;
-    align-items: center;
 }
 
 .promo-card {
@@ -243,7 +260,9 @@ html, body {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
+    height: 100%;
 }
+
 .promo-card-featured {
     background-color: #96480E;
     border-radius: 40px;
@@ -282,7 +301,7 @@ html, body {
     line-height: 1.5;
     opacity: 0.95;
 }
-/* SECCIÓN CONTACTO */
+
 .contacto-section {
     padding: 2rem 4rem 5rem;
 }
@@ -297,6 +316,7 @@ html, body {
     padding: 3.5rem 4rem;
     color: var(--color-blanco);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 100% !important;
 }
 
 .contacto-info {
@@ -381,7 +401,25 @@ html, body {
 .btn-enviar:hover {
     background-color: var(--color-bg);
     transform: translateY(-2px);
+    color: var(--color-terracota);
 }
+
+.hidden {
+    display: none !important;
+}
+
+.feedback-error {
+    background-color: #f8d7da !important;
+    color: #842029 !important;
+    border: 1px solid #f5c2c7 !important;
+}
+
+.feedback-exito {
+    background-color: #d1e7dd !important;
+    color: #0f5132 !important;
+    border: 1px solid #badbcc !important;
+}
+
 @media (max-width: 1024px) {
     .navbar, .hero-banner, .pasteles-section, .nosotros-section, .promos-section, .contacto-section {
         padding-left: 2rem;
@@ -394,16 +432,7 @@ html, body {
         justify-content: center;
         gap: 1.5rem;
         padding: 2rem;
-    }
-
-    .pasteles-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .promos-container {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-        margin: 0 auto;
+        max-width: calc(100% - 4rem);
     }
 
     .promo-card-featured {
@@ -420,8 +449,15 @@ html, body {
     }
 }
 
-/* Pantallas pequeñas (Celulares / max-width: 768px) */
 @media (max-width: 768px) {
+    main {
+        padding-top: 170px;
+    }
+
+    section {
+        scroll-margin-top: 160px;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -434,7 +470,6 @@ html, body {
         height: 120px;
     }
 
-    /* Menú horizontal deslizable en celulares (sin botones en escalón) */
     .nav-menu {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -443,11 +478,11 @@ html, body {
         margin-top: 0;
         width: 100%;
         padding-bottom: 0.4rem;
-        scrollbar-width: none; /* Oculta la barra en Firefox */
+        scrollbar-width: none;
     }
 
     .nav-menu::-webkit-scrollbar {
-        display: none; /* Oculta la barra en Chrome/Safari */
+        display: none;
     }
 
     .nav-btn {
@@ -461,10 +496,11 @@ html, body {
         margin: 0 1rem 2rem;
         padding: 1.5rem 1rem;
         border-radius: 20px;
+        max-width: calc(100% - 2rem);
     }
 
     .hero-img-left, .hero-img-right {
-        display: none; /* Oculta imágenes laterales decorativas para ahorrar espacio en móviles */
+        display: none;
     }
 
     .hero-card {
@@ -477,7 +513,6 @@ html, body {
         padding: 1rem 1rem 2.5rem;
     }
 
-    /* Corrección del separador/encabezado en celulares (en fila horizontal) */
     .section-header {
         flex-direction: row;
         justify-content: center;
@@ -491,13 +526,8 @@ html, body {
     }
 
     .section-icon {
-        height: 50px; /* Ícono reducido y proporcionado al lado del texto */
+        height: 50px;
         width: auto;
-    }
-
-    .pasteles-grid {
-        grid-template-columns: 1fr; /* Una sola columna para los pasteles */
-        gap: 2rem;
     }
 
     .nosotros-container, .contacto-container {

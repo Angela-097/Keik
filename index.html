@@ -3,152 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>keik - Pastelería</title>
+    <title>keik - Pastelería Artesanal</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="navbar">
+    <header class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-0">
         <a href="#"><img src="LogoKeik.png" alt="kaik" class="logo-img"></a>
-        <nav class="nav-menu">
+        <nav class="nav-menu d-flex align-items-center">
             <a href="#inicio" class="nav-btn">Inicio</a>
             <a href="#pasteles" class="nav-btn">Pasteles</a>
-            <a href="#especiales" class="nav-btn">Especiales</a> <!-- Cambiado de Opiniones -->
+            <a href="#promos" class="nav-btn">Promociones</a>
             <a href="#nosotros" class="nav-btn">Nosotros</a>
             <a href="#contacto" class="nav-btn">Contacto</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <!-- HERO BANNER -->
-    <section id="inicio" class="hero-banner">
-        <div class="hero-img-left"><img src="Pasteeel.png" alt="Pastel"></div>
-        <div class="hero-card"><p>Nuevo pastel Tres Leches:<br><em>Vainilla, Chocolate y Nutella.</em></p></div>
-        <div class="hero-img-right"><img src="brownie.png" alt="Brownie con helado"></div>
-    </section>
+    <main>
+        <section id="inicio" class="hero-banner container-fluid">
+            <div class="hero-img-left"><img src="Pasteeel.png" alt="Pastel"></div>
+            <div class="hero-card"><p>Nuevo pastel Tres Leches:<br><em>Vainilla, Chocolate y Nutella.</em></p></div>
+            <div class="hero-img-right"><img src="brownie.png" alt="Brownie con helado"></div>
+        </section>
 
-    <!-- SECCIÓN PASTELES (Galería) -->
-    <section id="pasteles" class="pasteles-section">
-        <div class="section-header">
-            <img src="k_ik__1_-removebg-preview.png" alt="Icono izq" class="section-icon">
-            <h2>Galería</h2>
-            <img src="k_ik__2_-removebg-preview.png" alt="Icono der" class="section-icon">
-        </div>
-
-        <div class="pasteles-grid">
-            <div class="card-producto">
-                <div class="card-img-box"><img src="crunchy-vainilla.png" alt="Crunchy Vanilla"><div class="precio-badge">$450.00</div></div>
-                <div class="card-footer"><h3 class="producto-nombre">CRUNCHY VANILLA & DRIP</h3></div>
+        <section id="pasteles" class="pasteles-section container-fluid">
+            <div class="section-header">
+                <img src="k_ik__1_-removebg-preview.png" alt="Icono izq" class="section-icon">
+                <h2>Galería</h2>
+                <img src="k_ik__2_-removebg-preview.png" alt="Icono der" class="section-icon">
             </div>
 
-            <div class="card-producto">
-                <div class="card-img-box"><img src="cheescake-cajeta.png" alt="Cheesecake Cajeta"><div class="precio-badge">$490.00</div></div>
-                <div class="card-footer"><h3 class="producto-nombre">CHEESECAKE SUPREMO DE CAJETA</h3></div>
-            </div>
-
-            <div class="card-producto">
-                <div class="card-img-box"><img src="choco-ferrero.png" alt="Choco Ferrero"><div class="precio-badge">$560.00</div></div>
-                <div class="card-footer"><h3 class="producto-nombre">CHOCO - FERRERO GOLD</h3></div>
-            </div>
-
-            <div class="card-producto">
-                <div class="card-img-box"><img src="pistacho.png" alt="Pistachio Garden"><div class="precio-badge">$540.00</div></div>
-                <div class="card-footer"><h3 class="producto-nombre">PISTACHIO GARDEN</h3></div>
-            </div>
-
-            <div class="card-producto">
-                <div class="card-img-box"><img src="velvet-ribbon.png" alt="Velvet Ribbon"><div class="precio-badge">$380.00</div></div>
-                <div class="card-footer"><h3 class="producto-nombre">VELVET RIBBON</h3></div>
-            </div>
-
-            <div class="card-producto">
-                <div class="card-img-box"><img src="chescake-arandano.png" alt="Cheesecake Arándano"><div class="precio-badge">$450.00</div></div>
-                <div class="card-footer"><h3 class="producto-nombre">CHEESECAKE ARÁNDANO & ROMERO</h3></div>
-            </div>
-        </div>
-    </section>
-
-   <!-- SECCIÓN PROMOCIONES-->
-    <section id="promos" class="promos-section">
-        <div class="section-header">
-            <img src="k_ik__1_-removebg-preview.png" alt="Icono izq" class="section-icon">
-            <h2>Promociones</h2>
-            <img src="k_ik__2_-removebg-preview.png" alt="Icono der" class="section-icon">
-        </div>
-
-        <div class="promos-container">
-            <div class="promo-card promo-card-1">
-                <div class="promo-tag">MARTES DULCES</div>
-                <h3>2x1 en Rebanadas</h3>
-                <p>Compra cualquier rebanada de pastel y llévate la segunda totalmente gratis.</p>
-            </div>
-            <div class="promo-card promo-card-featured">
-                <div class="promo-tag">¡FAVORITO DE LA SEMANA!</div>
-                <h3>Combo Cumpleaños</h3>
-                <p>Muestra tu identificación el mes de tu cumpleaños y obtén un <strong>15% OFF</strong> en pasteles grandes.</p>
-            </div>
-            <div class="promo-card promo-card-3">
-                <div class="promo-tag">SWEET HOUR</div>
-                <h3>Café + Rebanada</h3>
-                <p>Disfruta de nuestra combinación favorita por solo $120 de 4:00 pm a 7:00 pm.</p>
-            </div>
-        </div>
-    </section>
-<!-- SECCIÓN NOSOTROS -->
-    <section id="nosotros" class="nosotros-section">
-        <div class="nosotros-container">
-            <div class="nosotros-img-box">
-                <img src="keeeik.jpg" alt="Preparando pasteles en kaik">
-            </div>
-            <div class="nosotros-content">
-                <h2>Sobre Nosotros</h2>
-                <p>En <strong>keik</strong> creemos que cada día merece celebrarse con un toque dulce. Horneamos cada pastel de manera artesanal, utilizando ingredientes frescos y de la más alta calidad para regalarte un momento feliz en cada mordisco.</p>
-                <p>Nuestra pasión es transformar momentos ordinarios en recuerdos inolvidables a través del sabor y el amor por la repostería.</p>
-            </div>
-        </div>
-    </section>
-<!-- SECCIÓN CONTACTO -->
-    <section id="contacto" class="contacto-section">
-        <div class="section-header">
-            <img src="k_ik__1_-removebg-preview.png" alt="Icono izq" class="section-icon">
-            <h2>Contacto</h2>
-            <img src="k_ik__2_-removebg-preview.png" alt="Icono der" class="section-icon">
-        </div>
-
-        <div class="contacto-container">
-            <div class="contacto-info">
-                <h3>¡Hagamos tu día más dulce!</h3>
-                <p>¿Tienes dudas sobre algún pastel personalizado o quieres apartar tu pedido? Escríbenos y te responderemos pronto.</p>
-                <div class="info-detalles">
-                    <p> <strong>Ubicación:</strong> Centro, Tula de Allende</p>
-                    <p> <strong>Teléfono:</strong> 773 000 0000</p>
-                    <p> <strong>Horario:</strong> Lun - Sáb: 9:00 am - 8:00 pm</p>
+            <div class="pasteles-grid container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-producto">
+                            <div class="card-img-box"><img src="crunchy-vainilla.png" alt="Crunchy Vanilla"><div class="precio-badge">$450.00</div></div>
+                            <div class="card-footer"><h3 class="producto-nombre">CRUNCHY VANILLA & DRIP</h3></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-producto">
+                            <div class="card-img-box"><img src="cheescake-cajeta.png" alt="Cheesecake Cajeta"><div class="precio-badge">$490.00</div></div>
+                            <div class="card-footer"><h3 class="producto-nombre">CHEESECAKE SUPREMO DE CAJETA</h3></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-producto">
+                            <div class="card-img-box"><img src="choco-ferrero.png" alt="Choco Ferrero"><div class="precio-badge">$560.00</div></div>
+                            <div class="card-footer"><h3 class="producto-nombre">CHOCO - FERRERO GOLD</h3></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-producto">
+                            <div class="card-img-box"><img src="pistacho.png" alt="Pistachio Garden"><div class="precio-badge">$540.00</div></div>
+                            <div class="card-footer"><h3 class="producto-nombre">PISTACHIO GARDEN</h3></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-producto">
+                            <div class="card-img-box"><img src="velvet-ribbon.png" alt="Velvet Ribbon"><div class="precio-badge">$380.00</div></div>
+                            <div class="card-footer"><h3 class="producto-nombre">VELVET RIBBON</h3></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card-producto">
+                            <div class="card-img-box"><img src="chescake-arandano.png" alt="Cheesecake Arándano"><div class="precio-badge">$450.00</div></div>
+                            <div class="card-footer"><h3 class="producto-nombre">CHEESECAKE ARÁNDANO & ROMERO</h3></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <form class="contacto-form" id="formContacto" novalidate>
-                <div class="form-group">
-                    <input type="text" id="nombre" placeholder="Tu Nombre" required>
+        </section>
+
+        <section id="promos" class="promos-section container-fluid">
+            <div class="section-header">
+                <img src="k_ik__1_-removebg-preview.png" alt="Icono izq" class="section-icon">
+                <h2>Promociones</h2>
+                <img src="k_ik__2_-removebg-preview.png" alt="Icono der" class="section-icon">
+            </div>
+
+            <div class="promos-container container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-lg-4">
+                        <div class="promo-card promo-card-1 w-100">
+                            <div class="promo-tag">MARTES DULCES</div>
+                            <h3>2x1 en Rebanadas</h3>
+                            <p>Compra cualquier rebanada de pastel y llévate la segunda totalmente gratis.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="promo-card promo-card-featured w-100">
+                            <div class="promo-tag">¡FAVORITO DE LA SEMANA!</div>
+                            <h3>Combo Cumpleaños</h3>
+                            <p>Muestra tu identificación el mes de tu cumpleaños y obtén un <strong>15% OFF</strong> en pasteles grandes.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="promo-card promo-card-3 w-100">
+                            <div class="promo-tag">SWEET HOUR</div>
+                            <h3>Café + Rebanada</h3>
+                            <p>Disfruta de nuestra combinación favorita por solo $120 de 4:00 pm a 7:00 pm.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="correo" placeholder="Tu Correo Electrónico" required>
+            </div>
+        </section>
+
+        <section id="nosotros" class="nosotros-section container-fluid">
+            <div class="nosotros-container container">
+                <div class="nosotros-img-box">
+                    <img src="keeeik.jpg" alt="Preparando pasteles en kaik">
                 </div>
-                <div class="form-group">
-                    <select id="motivo" required>
-                        <option value="" disabled selected>Selecciona el motivo de contacto</option>
-                        <option value="pastel">Cotizar Pastel Personalizado</option>
-                        <option value="promocion">Dudas sobre Promociones</option>
-                        <option value="otro">Otro asunto</option>
-                    </select>
+                <div class="nosotros-content">
+                    <h2>Sobre Nosotros</h2>
+                    <p>En <strong>keik</strong> creemos que cada día merece celebrarse con un toque dulce. Horneamos cada pastel de manera artesanal, utilizando ingredientes frescos y de la más alta calidad para regalarte un momento feliz en cada mordisco.</p>
+                    <p>Nuestra pasión es transformar momentos ordinarios en recuerdos inolvidables a través del sabor y el amor por la repostería.</p>
                 </div>
-                <div class="form-group">
-                    <textarea id="mensaje" placeholder="¿Qué se te antoja ordenar o preguntar?" rows="4" required></textarea>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto-section container-fluid">
+            <div class="section-header">
+                <img src="k_ik__1_-removebg-preview.png" alt="Icono izq" class="section-icon">
+                <h2>Contacto</h2>
+                <img src="k_ik__2_-removebg-preview.png" alt="Icono der" class="section-icon">
+            </div>
+
+            <div class="contacto-container container">
+                <div class="contacto-info">
+                    <h3>¡Hagamos tu día más dulce!</h3>
+                    <p>¿Tienes dudas sobre algún pastel personalizado o quieres apartar tu pedido? Escríbenos y te responderemos pronto.</p>
+                    <div class="info-detalles">
+                        <p><i class="fa-solid fa-location-dot me-2"></i><strong>Ubicación:</strong> Centro, Tula de Allende</p>
+                        <p><i class="fa-solid fa-phone me-2"></i><strong>Teléfono:</strong> 773 000 0000</p>
+                        <p><i class="fa-solid fa-clock me-2"></i><strong>Horario:</strong> Lun - Sáb: 9:00 am - 8:00 pm</p>
+                    </div>
                 </div>
-                <div id="formFeedback" class="form-feedback hidden"></div>
-                <button type="submit" class="btn-enviar">ENVIAR MENSAJE</button>
-            </form>
-        </div>
-    </section>
+                <form class="contacto-form" id="formContacto" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="nombre" placeholder="Tu Nombre" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="correo" placeholder="Tu Correo Electrónico" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <select id="motivo" required class="form-select">
+                            <option value="" disabled selected>Selecciona el motivo de contacto</option>
+                            <option value="pastel">Cotizar Pastel Personalizado</option>
+                            <option value="promocion">Dudas sobre Promociones</option>
+                            <option value="otro">Otro asunto</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" placeholder="¿Qué se te antoja ordenar o preguntar?" rows="4" required class="form-control"></textarea>
+                    </div>
+                    <div id="formFeedback" class="form-feedback hidden alert mt-2 mb-0"></div>
+                    <button type="submit" class="btn-enviar">ENVIAR MENSAJE</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
