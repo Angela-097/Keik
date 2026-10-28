@@ -168,3 +168,55 @@ html, body {
     letter-spacing: 0.5px;
     line-height: 1.3;
 }
+/* SECCIÓN NOSOTROS */
+.nosotros-section {
+    padding: 2rem 4rem 4rem 4rem;
+}
+
+.nosotros-container {
+    background-color: var(--color-terracota);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem 4rem;
+    color: var(--color-blanco);
+}
+
+.nosotros-img-box {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nosotros-img-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.nosotros-img-box img:hover {
+    transform: scale(1.03);
+}
+
+.nosotros-content {
+    flex: 1.2;
+}
+
+.nosotros-content h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.nosotros-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
