@@ -108,7 +108,47 @@
             </div>
         </div>
     </section>
+<!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto-section">
+        <div class="section-header">
+            <img src="k_ik__1_-removebg-preview.png" alt="Icono izq" class="section-icon">
+            <h2>Contacto</h2>
+            <img src="k_ik__2_-removebg-preview.png" alt="Icono der" class="section-icon">
+        </div>
 
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <h3>¡Hagamos tu día más dulce!</h3>
+                <p>¿Tienes dudas sobre algún pastel personalizado o quieres apartar tu pedido? Escríbenos y te responderemos pronto.</p>
+                <div class="info-detalles">
+                    <p> <strong>Ubicación:</strong> Centro, Tula de Allende</p>
+                    <p> <strong>Teléfono:</strong> 773 000 0000</p>
+                    <p> <strong>Horario:</strong> Lun - Sáb: 9:00 am - 8:00 pm</p>
+                </div>
+            </div>
+            <form class="contacto-form" id="formContacto" novalidate>
+                <div class="form-group">
+                    <input type="text" id="nombre" placeholder="Tu Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="correo" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <div class="form-group">
+                    <select id="motivo" required>
+                        <option value="" disabled selected>Selecciona el motivo de contacto</option>
+                        <option value="pastel">Cotizar Pastel Personalizado</option>
+                        <option value="promocion">Dudas sobre Promociones</option>
+                        <option value="otro">Otro asunto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensaje" placeholder="¿Qué se te antoja ordenar o preguntar?" rows="4" required></textarea>
+                </div>
+                <div id="formFeedback" class="form-feedback hidden"></div>
+                <button type="submit" class="btn-enviar">ENVIAR MENSAJE</button>
+            </form>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
