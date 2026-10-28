@@ -71,7 +71,7 @@ html, body {
     min-height: 250px;
 }
 
-.hero-img-left img { width: 170px; object-fit: contain; }
+.hero-img-left img { width: 278px; object-fit: contain; }
 
 .hero-card {
     background-color: var(--color-blanco);
