@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kaik - Pastelería</title>
+    <title>keik - Pastelería</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,8 +15,8 @@
         <nav class="nav-menu">
             <a href="#inicio" class="nav-btn">Inicio</a>
             <a href="#pasteles" class="nav-btn">Pasteles</a>
+            <a href="#especiales" class="nav-btn">Especiales</a> <!-- Cambiado de Opiniones -->
             <a href="#nosotros" class="nav-btn">Nosotros</a>
-            <a href="#testimonios" class="nav-btn">Opiniones</a>
             <a href="#contacto" class="nav-btn">Contacto</a>
         </nav>
     </header>
@@ -28,13 +28,11 @@
         <div class="hero-img-right"><img src="brownie.png" alt="Brownie con helado"></div>
     </section>
 
-    <!-- SECCIÓN PASTELES -->
+    <!-- SECCIÓN PASTELES (Galería) -->
     <section id="pasteles" class="pasteles-section">
-        
-        <!-- Título de Galería con iconos laterales -->
         <div class="section-header">
             <img src="k_ik__1_-removebg-preview.png" alt="Icono izq" class="section-icon">
-            <h2>Pasteles</h2>
+            <h2>Galería</h2>
             <img src="k_ik__2_-removebg-preview.png" alt="Icono der" class="section-icon">
         </div>
 
@@ -70,7 +68,34 @@
             </div>
         </div>
     </section>
-    <!-- SECCIÓN NOSOTROS -->
+
+   <!-- SECCIÓN PROMOCIONES-->
+    <section id="promos" class="promos-section">
+        <div class="section-header">
+            <img src="k_ik__1_-removebg-preview.png" alt="Icono izq" class="section-icon">
+            <h2>Promociones</h2>
+            <img src="k_ik__2_-removebg-preview.png" alt="Icono der" class="section-icon">
+        </div>
+
+        <div class="promos-container">
+            <div class="promo-card promo-card-1">
+                <div class="promo-tag">MARTES DULCES</div>
+                <h3>2x1 en Rebanadas</h3>
+                <p>Compra cualquier rebanada de pastel y llévate la segunda totalmente gratis.</p>
+            </div>
+            <div class="promo-card promo-card-featured">
+                <div class="promo-tag">¡FAVORITO DE LA SEMANA!</div>
+                <h3>Combo Cumpleaños</h3>
+                <p>Muestra tu identificación el mes de tu cumpleaños y obtén un <strong>15% OFF</strong> en pasteles grandes.</p>
+            </div>
+            <div class="promo-card promo-card-3">
+                <div class="promo-tag">SWEET HOUR</div>
+                <h3>Café + Rebanada</h3>
+                <p>Disfruta de nuestra combinación favorita por solo $120 de 4:00 pm a 7:00 pm.</p>
+            </div>
+        </div>
+    </section>
+<!-- SECCIÓN NOSOTROS -->
     <section id="nosotros" class="nosotros-section">
         <div class="nosotros-container">
             <div class="nosotros-img-box">
@@ -83,6 +108,7 @@
             </div>
         </div>
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>

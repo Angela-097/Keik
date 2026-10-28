@@ -220,3 +220,65 @@ html, body {
     margin-bottom: 1rem;
     font-weight: 500;
 }
+.promos-section {
+    padding: 2rem 4rem 4rem;
+}
+
+.promos-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr; 
+    gap: 2rem;
+    align-items: center;
+}
+
+.promo-card {
+    background-color: var(--color-terracota);
+    color: var(--color-blanco);
+    border-radius: 35px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.promo-card-featured {
+    background-color: #96480E;
+    border-radius: 40px;
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.promo-card-featured:hover {
+    transform: translateY(-15px);
+}
+
+.promo-tag {
+    background-color: var(--color-blanco);
+    color: var(--color-terracota);
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+
+.promo-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.promo-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.95;
+}
