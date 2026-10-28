@@ -382,3 +382,135 @@ html, body {
     background-color: var(--color-bg);
     transform: translateY(-2px);
 }
+@media (max-width: 1024px) {
+    .navbar, .hero-banner, .pasteles-section, .nosotros-section, .promos-section, .contacto-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .hero-banner {
+        margin: 0 2rem 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .pasteles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promos-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .promo-card-featured {
+        transform: none; 
+    }
+
+    .nosotros-container, .contacto-container {
+        flex-direction: column;
+        padding: 2.5rem;
+    }
+
+    .nosotros-img-box img {
+        height: 250px;
+    }
+}
+
+/* Pantallas pequeñas (Celulares / max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        gap: 0.8rem;
+    }
+
+    .logo-img {
+        height: 120px;
+    }
+
+    /* Menú horizontal deslizable en celulares (sin botones en escalón) */
+    .nav-menu {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 0.5rem;
+        margin-top: 0;
+        width: 100%;
+        padding-bottom: 0.4rem;
+        scrollbar-width: none; /* Oculta la barra en Firefox */
+    }
+
+    .nav-menu::-webkit-scrollbar {
+        display: none; /* Oculta la barra en Chrome/Safari */
+    }
+
+    .nav-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .hero-banner {
+        margin: 0 1rem 2rem;
+        padding: 1.5rem 1rem;
+        border-radius: 20px;
+    }
+
+    .hero-img-left, .hero-img-right {
+        display: none; /* Oculta imágenes laterales decorativas para ahorrar espacio en móviles */
+    }
+
+    .hero-card {
+        max-width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .pasteles-section, .nosotros-section, .promos-section, .contacto-section {
+        padding: 1rem 1rem 2.5rem;
+    }
+
+    /* Corrección del separador/encabezado en celulares (en fila horizontal) */
+    .section-header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-icon {
+        height: 50px; /* Ícono reducido y proporcionado al lado del texto */
+        width: auto;
+    }
+
+    .pasteles-grid {
+        grid-template-columns: 1fr; /* Una sola columna para los pasteles */
+        gap: 2rem;
+    }
+
+    .nosotros-container, .contacto-container {
+        padding: 1.5rem;
+        gap: 2rem;
+        border-radius: 20px;
+    }
+
+    .nosotros-content h2, .contacto-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .contacto-form {
+        padding: 1.2rem;
+    }
+}
